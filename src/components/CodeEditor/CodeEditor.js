@@ -10,6 +10,7 @@ import Remarkable from 'remarkable';
 import {LiveEditor, LiveProvider} from 'react-live';
 import {colors, media} from 'theme';
 import MetaTitle from 'templates/components/MetaTitle';
+import SequenceDiagram from '../SequenceDiagram';
 
 const compileES5 = (
   code, // eslint-disable-next-line no-undef
@@ -238,6 +239,9 @@ class CodeEditor extends Component {
                     backgroundColor: colors.divider,
                   }}>
                   <MetaTitle>Result</MetaTitle>
+                </div>
+                <div>
+                  <SequenceDiagram />
                 </div>
                 <div
                   css={{

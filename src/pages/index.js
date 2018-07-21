@@ -17,6 +17,7 @@ import loadScript from 'utils/loadScript';
 import {babelURL} from 'site-constants';
 import ReactDOM from 'react-dom';
 import logoWhiteSvg from 'icons/logo-white.svg';
+import SequenceDiagram from 'components/SequenceDiagram';
 
 class Home extends Component {
   constructor(props, context) {
@@ -77,6 +78,7 @@ class Home extends Component {
           title="ZenUML - An online Sequence diagram generator"
           ogUrl={createOgUrl('index.html')}
         />
+        <SequenceDiagram/>
         <header
           css={{
             backgroundColor: colors.dark,

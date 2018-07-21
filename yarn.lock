@@ -265,6 +265,10 @@ ansi@^0.3.0, ansi@~0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/ansi/-/ansi-0.3.1.tgz#0c42d4fb17160d5a9af1e484bace1c66922c1b21"
 
+antlr4@^4.7.0:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/antlr4/-/antlr4-4.7.1.tgz#69984014f096e9e775f53dd9744bf994d8959773"
+
 any-promise@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-0.1.0.tgz#830b680aa7e56f33451d4b049f3bd8044498ee27"
@@ -9469,6 +9473,12 @@ send@0.16.2:
     range-parser "~1.2.0"
     statuses "~1.4.0"
 
+sequence-parser@^0.5.13:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.5.13.tgz#5884b0f6e844b91360e8e0016e5b272dea5e5b42"
+  dependencies:
+    antlr4 "^4.7.0"
+
 serve-index@^1.7.2:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/serve-index/-/serve-index-1.9.1.tgz#d3768d69b1e7d82e5ce050fff5b453bea12a9239"
@@ -10997,6 +11007,22 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue-sequence@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/vue-sequence/-/vue-sequence-0.6.0.tgz#71a717938a543d8fceea285b07b5be50d4c52377"
+  dependencies:
+    sequence-parser "^0.5.13"
+    vue "^2.5.16"
+    vuex "^3.0.1"
+
+vue@^2.5.16:
+  version "2.5.16"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
+
+vuex@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
 
 walker@~1.0.5:
   version "1.0.7"
