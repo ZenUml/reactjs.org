@@ -74,7 +74,7 @@ class Home extends Component {
     return (
       <div css={{width: '100%'}}>
         <TitleAndMetaTags
-          title="React - A JavaScript library for building user interfaces"
+          title="ZenUML - An online Sequence diagram generator"
           ogUrl={createOgUrl('index.html')}
         />
         <header
@@ -134,7 +134,7 @@ class Home extends Component {
                       fontSize: 60,
                     },
                   }}>
-                  React
+                  ZenUML
                 </h1>
                 <p
                   css={{
@@ -156,7 +156,8 @@ class Home extends Component {
                       fontSize: 30,
                     },
                   }}>
-                  A JavaScript library for building user interfaces
+                  An online (and offline) Sequence Diagram generator<br/>
+                  This site is a fork of ReactJs.org. It is under construction.
                 </p>
                 <Flex
                   valign="center"
