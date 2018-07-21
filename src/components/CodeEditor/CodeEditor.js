@@ -240,9 +240,6 @@ class CodeEditor extends Component {
                   }}>
                   <MetaTitle>Result</MetaTitle>
                 </div>
-                <div>
-                  <SequenceDiagram />
-                </div>
                 <div
                   css={{
                     padding: 10,
@@ -274,6 +271,7 @@ class CodeEditor extends Component {
                   }}
                   ref={this._setMountRef}
                 />
+                <SequenceDiagram code={this.state.compiled} />
               </div>
             )}
           </div>
@@ -288,25 +286,26 @@ class CodeEditor extends Component {
     }
 
     const {compiled} = this.state;
+    console.log(compiled);
 
-    try {
-      // Example code requires React, ReactDOM, and Remarkable to be within scope.
-      // It also requires a "mountNode" variable for ReactDOM.render()
-      // eslint-disable-next-line no-new-func
-      new Function('React', 'ReactDOM', 'Remarkable', 'mountNode', compiled)(
-        React,
-        ReactDOM,
-        Remarkable,
-        this._mountNode,
-      );
-    } catch (error) {
-      console.error(error);
+    // try {
+    //   // Example code requires React, ReactDOM, and Remarkable to be within scope.
+    //   // It also requires a "mountNode" variable for ReactDOM.render()
+    //   // eslint-disable-next-line no-new-func
+    //   new Function('React', 'ReactDOM', 'Remarkable', 'mountNode', compiled)(
+    //     React,
+    //     ReactDOM,
+    //     Remarkable,
+    //     this._mountNode,
+    //   );
+    // } catch (error) {
+    //   console.error(error);
 
-      this.setState({
-        compiled: null,
-        error,
-      });
-    }
+    //   // this.setState({
+    //   //   compiled: null,
+    //   //   error,
+    //   // });
+    // }
   }
 
   _setMountRef = ref => {
@@ -314,33 +313,21 @@ class CodeEditor extends Component {
   };
 
   _updateState(code, showJSX = true) {
-    try {
-      let newState = {
-        compiled: compileES5(code),
-        error: null,
-      };
 
-      if (showJSX) {
-        newState.code = code;
-        newState.compiledES6 = compileES6(code);
-      } else {
-        newState.compiledES6 = code;
-      }
+    let newState = {
+      compiled: code,
+      code: code,
+      error: null,
+    };
 
-      return newState;
-    } catch (error) {
-      console.error(error);
+    // if (showJSX) {
+    //   newState.code = code;
+    //   newState.compiledES6 = compileES6(code);
+    // } else {
+    //   newState.compiledES6 = code;
+    // }
 
-      // Certain ad blockers (eg Fair AdBlocker) prevent Babel from loading.
-      // If we suspect this is the case, we can show a more helpful error.
-      const showBabelErrorMessage = !window.Babel;
-
-      return {
-        compiled: null,
-        error,
-        showBabelErrorMessage,
-      };
-    }
+    return newState;
   }
 
   _onChange = code => {

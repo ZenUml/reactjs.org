@@ -78,7 +78,6 @@ class Home extends Component {
           title="ZenUML - An online Sequence diagram generator"
           ogUrl={createOgUrl('index.html')}
         />
-        <SequenceDiagram/>
         <header
           css={{
             backgroundColor: colors.dark,
