@@ -136,8 +136,9 @@ class CodeEditor extends Component {
                   color: colors.white,
                 }}>
                 <MetaTitle onDark={true}>
-                  Live JSX Editor
+                  ZenUML DSL Editor
                   <label
+                    style={{display: 'none'}}
                     css={{
                       fontSize: 14,
                       float: 'right',
