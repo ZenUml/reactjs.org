@@ -18,6 +18,7 @@ import {babelURL} from 'site-constants';
 import ReactDOM from 'react-dom';
 import logoWhiteSvg from 'icons/logo-white.svg';
 import SequenceDiagram from 'components/SequenceDiagram';
+import {Version} from 'vue-sequence';
 
 class Home extends Component {
   constructor(props, context) {
@@ -135,7 +136,7 @@ class Home extends Component {
                       fontSize: 60,
                     },
                   }}>
-                  ZenUML
+                  ZenUML {Version}
                 </h1>
                 <p
                   css={{
