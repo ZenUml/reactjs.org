@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { Store, SeqDiagram, Version } from 'vue-sequence';
+import { Store, SeqDiagram } from 'vue-sequence';
 import 'vue-sequence/dist/vue-sequence.css';
 import cloneDeep from '../../utils/clone-deep';
 
@@ -29,7 +29,6 @@ class SequenceDiagram extends Component {
   render() {
     return (
       <div>
-        {Version}
         <div ref="mount1"></div>
       </div>
     )
