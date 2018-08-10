@@ -121,7 +121,7 @@ class CodeEditor extends Component {
             }}>
             <div
               css={{
-                flex: '0 0 70%',
+                flex: '0 0 30%',
                 overflow: 'hidden',
                 borderRadius: '10px 0 0 10px',
 
@@ -186,7 +186,7 @@ class CodeEditor extends Component {
             {error && (
               <div
                 css={{
-                  flex: '0 0 30%',
+                  flex: '0 0 60%',
                   overflow: 'hidden',
                   border: `1px solid ${colors.error}`,
                   borderRadius: '0 10px 10px 0',
@@ -224,7 +224,9 @@ class CodeEditor extends Component {
             {!error && (
               <div
                 css={{
-                  flex: '0 0 30%',
+                  flex: '0 0 70%',
+                  display: 'flex',
+                  flexDirection: 'column',
                   overflow: 'hidden',
                   border: `1px solid ${colors.divider}`,
                   borderRadius: '0 10px 10px 0',
@@ -244,6 +246,7 @@ class CodeEditor extends Component {
                   css={{
                     padding: 10,
                     maxHeight: '340px !important',
+                    flexGrow: 1,
                     overflow: 'auto',
 
                     '& input': {
@@ -258,11 +261,6 @@ class CodeEditor extends Component {
                       padding: '5px 10px',
                     },
 
-                    '& label': {
-                      display: 'block',
-                      marginTop: 10,
-                    },
-
                     '& textarea': {
                       width: '100%',
                       height: 60,
@@ -270,8 +268,9 @@ class CodeEditor extends Component {
                     },
                   }}
                   ref={this._setMountRef}
-                />
-                <SequenceDiagram code={this.state.compiled} />
+                >
+                  <SequenceDiagram code={this.state.compiled} />
+                </div>
               </div>
             )}
           </div>
