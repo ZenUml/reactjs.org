@@ -124,7 +124,7 @@ class Home extends Component {
               <Container>
                 <h1
                   css={{
-                    color: colors.brand,
+                    color: colors.white,
                     textAlign: 'center',
                     margin: 0,
                     fontSize: 45,
@@ -136,8 +136,22 @@ class Home extends Component {
                       fontSize: 60,
                     },
                   }}>
-                  ZenUML {Version}
+                  ZenUML
                 </h1>
+                <h2
+                  css={{
+                    color: colors.brand,
+                    textAlign: 'center',
+                    margin: 0,
+                    fontSize: 15,
+                    letterSpacing: '0.01em',
+                    [media.size('xsmall')]: {
+                      fontSize: 10,
+                    },
+                    [media.greaterThan('xlarge')]: {
+                      fontSize: 20,
+                    },
+                  }}>Core library version: {Version}</h2>
                 <p
                   css={{
                     paddingTop: 15,
