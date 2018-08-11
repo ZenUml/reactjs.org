@@ -12,6 +12,8 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
+This tutorial is under construction.
+
 This tutorial doesn't assume any existing React knowledge.
 
 ## Before We Start the Tutorial
