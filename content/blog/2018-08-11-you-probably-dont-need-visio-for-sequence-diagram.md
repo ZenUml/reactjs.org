@@ -1,6 +1,6 @@
 ---
 title: "You Probably Don't Need Visio for Sequence Diagram"
-author: [Peng Xiao]
+author: [acdlite]
 ---
 
 This is a place-holder.
