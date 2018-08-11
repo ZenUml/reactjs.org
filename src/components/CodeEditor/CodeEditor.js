@@ -160,7 +160,7 @@ class CodeEditor extends Component {
                   height: '100%',
                   width: '100%',
                   borderRadius: '0',
-                  maxHeight: '340px !important',
+                  maxHeight: '680px !important',
                   marginTop: '0 !important',
                   marginLeft: '0 !important',
                   paddingLeft: '0 !important',
@@ -245,7 +245,7 @@ class CodeEditor extends Component {
                 <div
                   css={{
                     padding: 10,
-                    maxHeight: '340px !important',
+                    maxHeight: '680px !important',
                     flexGrow: 1,
                     overflow: 'auto',
 
