@@ -14,7 +14,7 @@ import {version} from 'site-constants';
 import ExternalLinkSvg from 'templates/components/ExternalLinkSvg';
 import DocSearch from './DocSearch';
 
-import logoSvg from 'icons/logo.svg';
+import logoSvg from 'icons/logo-48x48.png';
 
 const Header = ({location}: {location: Location}) => (
   <header
@@ -86,7 +86,7 @@ const Header = ({location}: {location: Location}) => (
                 border: 0,
               },
             }}>
-            React
+            ZenUML
           </span>
         </Link>
 
