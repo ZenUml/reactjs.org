@@ -18,11 +18,11 @@ const Versions = () => (
   <Container>
     <div css={sharedStyles.articleLayout.container}>
       <div css={sharedStyles.articleLayout.content}>
-        <Header>React Versions</Header>
-        <TitleAndMetaTags title="React - Versions" />
+        <Header>ZenUML Versions</Header>
+        <TitleAndMetaTags title="ZenUML - Versions" />
         <div css={sharedStyles.markdown}>
           <p>
-            A complete release history for React is available{' '}
+            This page is under construction. A complete release history for React is available{' '}
             <a
               href="https://github.com/facebook/react/releases"
               target="_blank"
