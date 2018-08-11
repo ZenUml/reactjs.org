@@ -55,7 +55,7 @@ const style = {
 
 const primaryStyle = {
   backgroundColor: colors.brand,
-  color: colors.black,
+  color: colors.white,
   padding: '10px 25px',
   whiteSpace: 'nowrap',
   transition: 'background-color 0.2s ease-out',
