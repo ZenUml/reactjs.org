@@ -19,5 +19,12 @@ module.exports = ({config, stage}) => {
       extensions: ['', '.js', '.jsx', '.json'],
     },
   });
+  if (stage === "build-html") {
+    config.loader("null", {
+      test: /vue-sequence/,
+      loader: "null-loader",
+    });
+  }
+
   return config;
 };
