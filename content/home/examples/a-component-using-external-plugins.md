@@ -1,6 +1,12 @@
 ---
-title: A Component Using External Plugins
+title: Async message
 order: 3
 ---
 
-React is flexible and provides hooks that allow you to interface with other libraries and frameworks. This example uses **remarkable**, an external Markdown library, to convert the `<textarea>`'s value in real time.
+Normal messages in will produce message bars on the lifeline. A message bar 
+represents a duration of the execution. If you would like to present only a
+message from one participant to another, async message gives you more flexibility.
+
+In an `async-message` sentence (e.g. `Alice->Bob: How are your?`),
+you need to provide the source participant (`Alice`), the target participant
+(`Bob`) and the message (`the message`).
