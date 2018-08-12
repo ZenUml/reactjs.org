@@ -14,7 +14,7 @@ import React from 'react';
 import {colors, media} from 'theme';
 import {sectionListCommunity, sectionListDocs} from 'utils/sectionList';
 
-import ossLogoPng from 'images/oss_logo.png';
+import ossLogoPng from 'icons/logo-48x48.png';
 
 const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
   <footer
@@ -162,11 +162,11 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             },
           }}>
           <a
-            href="https://code.facebook.com/projects/"
+            href="https://www.zenuml.com"
             target="_blank"
             rel="noopener">
             <img
-              alt="Facebook Open Source"
+              alt="ZenUML"
               css={{
                 maxWidth: 160,
                 height: 'auto',
@@ -179,7 +179,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               color: colors.subtleOnDark,
               paddingTop: 15,
             }}>
-            Copyright © 2018 Facebook Inc.
+            Copyright © 2018 ZenUML
           </p>
         </section>
       </div>
