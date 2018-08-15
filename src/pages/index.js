@@ -175,26 +175,26 @@ class Home extends Component {
                   An online (and offline) Sequence Diagram generator<br/>
                   This site is a fork of ReactJs.org. It is under construction.
                 </p>
-                <Flex
-                  valign="center"
-                  css={{
-                    paddingTop: 40,
+                {/*<Flex*/}
+                  {/*valign="center"*/}
+                  {/*css={{*/}
+                    {/*paddingTop: 40,*/}
 
-                    [media.greaterThan('xlarge')]: {
-                      paddingTop: 65,
-                    },
-                  }}>
-                  <CtaItem>
-                    <ButtonLink to="/docs/getting-started.html" type="primary">
-                      Get Started
-                    </ButtonLink>
-                  </CtaItem>
-                  <CtaItem>
-                    <ButtonLink to="/tutorial/tutorial.html" type="secondary">
-                      Take the Tutorial
-                    </ButtonLink>
-                  </CtaItem>
-                </Flex>
+                    {/*[media.greaterThan('xlarge')]: {*/}
+                      {/*paddingTop: 65,*/}
+                    {/*},*/}
+                  {/*}}>*/}
+                  {/*<CtaItem>*/}
+                    {/*<ButtonLink to="/docs/getting-started.html" type="primary">*/}
+                      {/*Get Started*/}
+                    {/*</ButtonLink>*/}
+                  {/*</CtaItem>*/}
+                  {/*<CtaItem>*/}
+                    {/*<ButtonLink to="/tutorial/tutorial.html" type="secondary">*/}
+                      {/*Take the Tutorial*/}
+                    {/*</ButtonLink>*/}
+                  {/*</CtaItem>*/}
+                {/*</Flex>*/}
               </Container>
             </div>
           </div>

@@ -72,6 +72,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "sync": "aws s3 sync ./public s3://docs.zenuml.com",
     "check-all": "npm-run-all prettier --parallel lint flow",
     "ci-check": "npm-run-all prettier:diff --parallel lint flow",
     "dev": "gatsby develop -H 0.0.0.0",
