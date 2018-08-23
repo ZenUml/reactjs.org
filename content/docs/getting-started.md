@@ -31,14 +31,35 @@ Each `participant` has a column and the message exchanged between them are repre
 by arrows.
 
 ### Lifeline
-Lifeline is a `named element` which represent an **individual participant** in the 
-interaction.
+
+**Lifeline** represents an individual **participant** in the interaction.
 
 In ZenUML, to declare a `participant`, you simply type in the name of it, such as 
-`AParticipant`.
+`AParticipant` at the beginning.
 
 ![A Participant](../images/docs/A-Participant.png)
 
+
+### Execution
+
+**Execution** represents a period in the participant's lifetime. It is the bar placed on the lifeline.
+
+In ZenUML, an execution is automatically created when you call a method on a participant (e.g. `A.method()`).
+
+![Execution](../images/docs/execution.png)
+
+### Alternatives
+
+**Alternatives** represents a choice or alternatives of behaviour. At most one of the operands will be chose.
+ 
+In ZenUML, to create an alternative fragment, you simply use your familiar keywords `if/else` 
+(e.g. `if(x) { A.method() }`).
+
+![Alternative](../images/docs/alternatives.png)
+
+### Loop
+
+**Loop** represents a repeated execution.
 
 
 
