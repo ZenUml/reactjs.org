@@ -22,6 +22,26 @@ This page is an overview of the ZenUML documentation and related resources.
 
 It is under construction.
 
+UML sequence diagram is model the flow of logic within a system. It is commonly used
+for both analysis and design purpose. It is also used to analyze legacy code.
+
+## Sequence Diagram notions
+Sequence diagram is structured in a way that it represents a time-line of activities. 
+Each `participant` has a column and the message exchanged between them are represented
+by arrows.
+
+### Lifeline
+Lifeline is a `named element` which represent an **individual participant** in the 
+interaction.
+
+In ZenUML, to declare a `participant`, you simply type in the name of it, such as 
+`AParticipant`.
+
+![A Participant](../images/docs/A-Participant.png)
+
+
+
+
 **React** is a JavaScript library for building user interfaces. Learn what React is all about on [our homepage](/) or [in the tutorial](/tutorial/tutorial.html).
 
 ---
