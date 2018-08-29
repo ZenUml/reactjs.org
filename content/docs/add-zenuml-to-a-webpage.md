@@ -1,12 +1,18 @@
 ---
-id: add-react-to-a-website
-title: Add React to a Website
-permalink: docs/add-react-to-a-website.html
+id: add-zenuml-to-a-webpage
+title: Add ZenUML to a Webpage
+permalink: docs/add-zenuml-to-a-webpage.html
 redirect_from:
-  - "docs/add-react-to-an-existing-app.html"
+  - "docs/add-zenuml-to-an-existing-app.html"
 prev: getting-started.html
-next: create-a-new-react-app.html
+next: create-a-new-zenuml-diagram.html
 ---
+
+On this page, we will tell you how to add ZenUML (as Viewer or Editor) to any webpage.
+
+It is still under construction.
+
+===============
 
 Use as little or as much React as you need.
 
