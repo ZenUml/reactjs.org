@@ -71,7 +71,7 @@
     "url": "git+https://github.com/reactjs/reactjs.org.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --no-uglify",
     "sync": "aws s3 sync ./public s3://docs.zenuml.com",
     "check-all": "npm-run-all prettier --parallel lint flow",
     "ci-check": "npm-run-all prettier:diff --parallel lint flow",
