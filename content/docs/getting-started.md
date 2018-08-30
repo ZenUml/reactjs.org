@@ -37,6 +37,10 @@ by arrows.
 In ZenUML, to declare a `participant`, you simply type in the name of it, such as 
 `AParticipant` at the beginning.
 
+```js
+AParticipant
+```
+
 ![A Participant](../images/docs/A-Participant.png)
 
 
@@ -46,6 +50,10 @@ In ZenUML, to declare a `participant`, you simply type in the name of it, such a
 
 In ZenUML, an execution is automatically created when you call a method on a participant (e.g. `A.method()`).
 
+```js
+A.method()
+```
+
 ![Execution](../images/docs/execution.png)
 
 ### Alternatives
@@ -54,6 +62,12 @@ In ZenUML, an execution is automatically created when you call a method on a par
  
 In ZenUML, to create an alternative fragment, you simply use your familiar keywords `if/else` 
 (e.g. `if(x) { A.method() }`).
+
+```js
+if(x) { 
+    A.method() 
+  }
+```
 
 ![Alternative](../images/docs/alternatives.png)
 
