@@ -37,45 +37,47 @@ by arrows.
 In ZenUML, to declare a `participant`, you simply type in the name of it, such as 
 `AParticipant` at the beginning.
 
+![A Participant](../images/docs/A-Participant.png)
+
 ```js
 AParticipant
 ```
-
-![A Participant](../images/docs/A-Participant.png)
-
 
 ### Execution
 
 **Execution** represents a period in the participant's lifetime. It is the bar placed on the lifeline.
 
-In ZenUML, an execution is automatically created when you call a method on a participant (e.g. `A.method()`).
+In ZenUML, an execution is automatically created when you call a method on a participant.
+
+![Execution](../images/docs/execution.png)
 
 ```js
 A.method()
 ```
-
-![Execution](../images/docs/execution.png)
-
 ### Alternatives
 
 **Alternatives** represents a choice or alternatives of behaviour. At most one of the operands will be chose.
  
-In ZenUML, to create an alternative fragment, you simply use your familiar keywords `if/else` 
-(e.g. `if(x) { A.method() }`).
+In ZenUML, to create an alternative fragment, you simply use your familiar keywords `if/else`.
+
+![Alternative](../images/docs/alternatives.png)
 
 ```js
 if(x) { 
-    A.method() 
-  }
+  A.method() 
+}
 ```
-
-![Alternative](../images/docs/alternatives.png)
 
 ### Loop
 
 **Loop** represents a repeated execution.
 
-In ZenUML, to create a loop fragment, you can choose one of `for`, `foreach`, `forEach` and `while` 
-(e.g. `forEach(item) { Collection.Add(item) }`).
+In ZenUML, to create a loop fragment, you can choose one of `for`, `foreach`, `forEach` and `while`.
 
 ![Loop](../images/docs/loop.png)
+
+```js
+forEach(item) { 
+  Collection.Add(item) 
+}
+```
