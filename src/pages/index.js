@@ -76,7 +76,7 @@ class Home extends Component {
     return (
       <div css={{width: '100%'}}>
         <TitleAndMetaTags
-          title="ZenUML - An online Sequence diagram generator"
+          title="ZenUML ndash; An online Sequence diagram generator"
           ogUrl={createOgUrl('index.html')}
         />
         <header
