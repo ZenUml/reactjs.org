@@ -1,6 +1,6 @@
-# reactjs.org
+# ZenUML.com
 
-This repo contains the source code and documentation powering [reactjs.org](https://reactjs.org/).
+This repo contains the source code and documentation powering [docs.zenuml.com](https://docs.zenuml.com/).
 
 ## Getting started
 
